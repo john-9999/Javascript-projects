@@ -1,0 +1,11 @@
+/Registro de alumnos en presencia y ausencia:
+
+-Crear mini-sistema para registrar alumnos presentes y ausentes.
+-Pasado 30 días, mostrar situación del alumno.
+-Máximo 10% de ausencias.
+
+/Registration of students in presence and absence:
+
+-Create mini-system to record present and absent students.
+-After 30 days, show the student's situation.
+-Maximum 10% of absences.
