@@ -1,0 +1,11 @@
+DESCRIPCIÓN:
+Maquina/sistema con:
+-Sistema personalizado de entrega, preguntando al cliente su nombre.
+-Entrega información o recomendación de compra automáticamente productos dependiendo la cantidad de dinero que ingrese el cliente.
+
+DESCRIPTION:
+Machine/system with:
+-Personalized delivery system, asking the customer for their name.
+-Deliver information or purchase recommendation automatically products depending on the amount of money that the customer enters.
+
+
