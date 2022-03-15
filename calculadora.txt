@@ -1,0 +1,3 @@
+Crear calculadora para simplificarnos el trabajo con operaciones básicas para que el usuario las utilice a su gusto.
+
+Create a calculator to simplify our work with basic operations so that the user can use them to their liking.
