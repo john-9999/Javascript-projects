@@ -1,0 +1,16 @@
+Condición:
+-Los clientes deberan pagar su cuota mensual para adquirir los diferentes productos que ofrece tu negocio fitness.
+
+//TOMAR NOMBRE DEL CLIENTE//
+//MOSTRAR PRODUCTOS DISPONIBLES Y QUE ELIJA UNO//
+//DEPENDIENDO EL ABONO QUE ELIJA LE MOSTRAREMOS EL ABONO QUE HA ELEGIDO Y LOS MEDIOS DE PAGO//
+
+
+Condition:
+-Customers must pay their monthly fee to purchase the different products offered by your fitness business.
+
+//TAKE CUSTOMER NAME//
+//SHOW AVAILABLE PRODUCTS AND CHOOSE ONE//
+//DEPENDING ON THE TICKET YOU CHOOSE, WE WILL SHOW YOU THE TICKET YOU HAVE CHOSEN AND THE MEANS OF PAYMENT//
+
+
