@@ -1,0 +1,39 @@
+A)Situación inicial:
+-El usuario va a un shop de celulares a comprar un nuevo celular pero los vendedores no saben las caracteristicas que tine cada celular,
+entonces hay que crear un sistema que le facilite esto al usuario para que tenga una mejor experiencia a la hora de comprar un producto.
+
+
+Condiciones:
+
+-Mostrarle las particularidades de los 3 celulares.
+-Cada uno debe tener color,peso resolución de pantalla, cámara y RAM.
+-Deben poder prender, reiniciar, tomar fotos y grabar.
+
+B)Situación que ocurre en el momento que el usuario está dentro del shop:
+
+-Ve 2 celulares de alta gama que pueden grabar en camara super lenta, reconocimiento facial y tienen una cámara extra.
+
+Condiciones:
+-Implementar todas estás cualidades en los celulares de alta gama.
+
+
+
+
+-----
+A) Initial situation:
+-The user goes to a cell phone shop to buy a new cell phone but the sellers do not know the characteristics that each cell phone has,
+then you have to create a system that facilitates this for the user so that they have a better experience when buying a product.
+
+
+Terms:
+
+-Show him the particularities of the 3 cell phones.
+-Each one must have color, weight, screen resolution, camera and RAM.
+-They must be able to turn on, restart, take photos and record.
+
+B) Situation that occurs when the user is inside the shop:
+
+-See 2 high-end cell phones that can record in super slow motion, facial recognition and have an extra camera.
+
+Terms:
+-Implement all these qualities in high-end cell phones.
