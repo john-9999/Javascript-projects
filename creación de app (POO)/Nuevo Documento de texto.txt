@@ -1,0 +1,16 @@
+C)Situación final:
+-El usuario quiere decidir que app es mejor dependiendo la tematica de cada una.
+
+Condiciones:
+-Crear una app/sistema para decidir que app descargar.
+-Debe contener/mostrar la cantidad de descargas, puntuación y peso.
+-Se deben poder instalar, abrir, cerrar y desinstalar.
+
+-----
+C) Final situation:
+-The user wants to decide which app is better depending on the theme of each one.
+
+Terms:
+-Create an app/system to decide which app to download.
+-Must contain/show the number of downloads, score and weight.
+-They must be able to install, open, close and uninstall.
