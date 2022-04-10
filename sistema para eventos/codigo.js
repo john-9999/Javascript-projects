@@ -55,7 +55,7 @@ else if (dineroAndrew >=1 && dineroAndrew <1.6 ){
 	alert ("Andrew, comprate 1 copa de Gin Heredero")
 }
 else if (dineroAndrew >= 1.6 && dineroAndrew < 1.7 ){
-	alert ("juanAndrew, comprate 1 chandon")
+	alert ("Andrew, comprate 1 chandon")
 }
 else if (dineroAndrew >=1.8 && dineroAndrew < 2.9)
 {
