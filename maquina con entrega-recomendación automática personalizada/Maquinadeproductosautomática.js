@@ -3,15 +3,15 @@ let nombre =prompt(` ¿Cuál es tu nombre? `);
 let dinero = prompt(" ¿Cuánto dinero tienes? ");
 
 if(dinero >=1 && dinero <2){
-        alert(`${nombre}, comprate un baggio `);
+        alert(`${nombre}, comprate una pizza `);
 }
 
 else if(dinero >= 2 && dinero <3){
-        alert(`${nombre}, comprate una cerveza `);
+        alert(`${nombre}, comprate una porción de lasagna `);
 }
 
 else if(dinero >=3){
-        alert(`${nombre}, comprate un chandon premium `);
+        alert(`${nombre}, comprate una caja de sandwich's triples `);
 }
 
 else{
