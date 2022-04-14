@@ -1,0 +1,22 @@
+ASISTENTE VIRTUAL "MESSI":
+
+¿Qué es un asistente virtual Messi?
+
+"Messi" es el nombre de este proyecto, es un asistente virtual. Este asistente funciona principalmente por voz, 
+de manera que puedas hacerle preguntas y el asistente te devuelva las respuestas a lo que le hayas preguntado.
+
+¿Cómo funciona el asistente virtual Messi?
+
+Los asistentes virtuales permiten dar respuesta a las preguntas de los usuarios.
+Cuentan con un sistema de Machine Learning que permite que estos se vayan alimentando de información. 
+En 9 de cada 10 casos son efectivos, haciendo nuestro día a día mucho más sencillo.
+
+¿Cuál es el objetivo de Messi?
+
+Messi, además de devolvernos la información que le solicitemos, también funciona como centro de hogares inteligentes.
+Puede controlar dispositivos conectados a internet tales como luces inteligentes y dispositivos electrónicos.
+
+¿Cómo funciona Messi?
+1-En este caso tenemos a disposición un botón para activar a Messi desde el navegador.
+2-Presionar el botón
+3-¡Listo! Pedile algo por voz a Messi.
