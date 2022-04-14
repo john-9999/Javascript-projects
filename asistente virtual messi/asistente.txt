@@ -20,3 +20,28 @@ Puede controlar dispositivos conectados a internet tales como luces inteligentes
 1-En este caso tenemos a disposición un botón para activar a Messi desde el navegador.
 2-Presionar el botón
 3-¡Listo! Pedile algo por voz a Messi.
+
+-----------------------------------------
+
+VIRTUAL ASSISTANT "MESSI":
+
+What is a Messi virtual assistant?
+
+"Messi" is the name of this project, it is a virtual assistant. This assistant works mainly by voice,
+so that you can ask questions and the assistant returns the answers to what you have asked.
+
+How does the Messi virtual assistant work?
+
+Virtual assistants allow answering user questions.
+They have a Machine Learning system that allows them to feed on information.
+In 9 out of 10 cases they are effective, making our day to day life much easier.
+
+What is Messi's goal?
+
+Messi, in addition to returning the information that we request, also works as a center for smart homes.
+You can control internet connected devices such as smart lights and electronic devices.
+
+How does Messi work?
+1-In this case we have a button available to activate Messi from the browser.
+2-Press the button
+3-Ready! Ask Messi for something by voice.
