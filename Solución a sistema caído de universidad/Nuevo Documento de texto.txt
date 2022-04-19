@@ -1,0 +1,3 @@
+C)-Preguntarle en que materia se quiere inscribir.
+-Si ya hay 20 inscriptos, negarle la inscripción.
+-Si hay menos de 20, inscribirlo y añadirlo a la lista de alumnos.

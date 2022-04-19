@@ -1,0 +1,8 @@
+B)-Que la función nos devuelva:
+.El profesor asignado.
+.Nombre de los alumnos.
+
+-Función que nos indique en cuántas clases está el alumno.
+-Nombres de esas clases y sus profesores.
+
+
