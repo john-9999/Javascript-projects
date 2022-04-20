@@ -1,7 +1,7 @@
 let materias = {
 		fÍsica: ["Profe Alexander","pedro","nicolas","valentina","agustin"],
 		programación: ["Profe Macagno","pedro","juan","nicolas"],
-		logica: ["Profe Hernandez","pedro","juan","nicolas","valentina","agustin"],
+		lógica: ["Profe Hernandez","pedro","juan","nicolas","valentina","agustin"],
 		química: ["Profe Garcia","pedro","juan","nicolas","valentina","agustin"]
 	}
 
@@ -21,7 +21,7 @@ const inscribir = (alumno,materia)=>{
 			materias = {
 		        fÍsica: personas, //¡se añade a la persona aquí!
 		        programación: materias['programación'],
-		        logica: materias['logica'],
+		        lógica: materias['lógica'],
 		        química:materias['química']
 	        }
 		}
@@ -30,16 +30,16 @@ const inscribir = (alumno,materia)=>{
 			materias = {
 		        fÍsica: materias['fÍsica'],
 		        programación: personas, //¡se añade a la persona aquí!
-		        logica: materias['logica'],
+		        lógica: materias['lógica'],
 		        química:materias['química']
 	        }
 		}
 
-		else if (materia == "logica") {//SI ESCRIBE LÓGICA...
+		else if (materia == "lógica") {//SI ESCRIBE LÓGICA...
 			materias = {
 		        fÍsica: materias['fÍsica'],
 		        programación: materia['programación'],
-		        logica: personas, //¡se añade a la persona aquí!
+		        lógica: personas, //¡se añade a la persona aquí!
 		        química:materias['química']
 	        }
 		}
@@ -48,7 +48,7 @@ const inscribir = (alumno,materia)=>{
 			materias = {
 		        fÍsica: materias['fÍsica'],
 		        programación: materia['programación'],
-		        logica: materias['logica'],
+		        lógica: materias['lógica'],
 		        química: personas //¡se añade a la persona aquí!
 	        }
 		}
