@@ -1,0 +1,9 @@
+A)
+- Solicitar los datos y decirle si aprueba o reprueba.
+-Mostrar todo esto con colores representativos en consola.
+
+B)
+-Organizar diariamente las tareas
+-Utilizar la consola para organizarlo.
+-Cada tarea no debe superar las 4hs.
+
