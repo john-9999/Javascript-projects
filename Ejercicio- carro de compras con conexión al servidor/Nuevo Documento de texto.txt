@@ -1,0 +1,7 @@
+A)- Indicarle los 20 productos posibles al usuario con sus 4 imágenes y este debe seleccionar cuál producto usar.
+
+  - Una vez seleccionado el producto enviar los datos al servidor y que el backend se encargue.
+_____
+A)- Indicate the 20 possible products to the user with their 4 images and they must select which product to use.
+
+  - Once the product is selected, send the data to the server and let the backend take care of it.
