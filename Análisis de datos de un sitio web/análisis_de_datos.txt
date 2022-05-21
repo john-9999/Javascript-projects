@@ -1,0 +1,19 @@
+Analisis de datos de un sitio web.
+
+Data analysis of a website.
+
+
+
+B)Sistema que nos permite conocer los suficientes datos de un sitio web:
+  -El usuario al encontrarse utilizando la pc abre una página y presiona F11, desde allí se empieza a navegar pero hay un problema... 
+   como ahora está en pantalla completa no puede ver la barra de marcadores, ni el protocolo, ni URL, 
+   ni ninguna información que nos puede otorgar la interfaz que contiene la barra de busqueda.
+
+__
+
+
+
+B) System that allows us to know enough data of a website:
+  -When the user is using the PC, he opens a page and presses F11, from there he starts to navigate but there is a problem...
+   as it is now in full screen you cannot see the bookmarks bar, nor the protocol, nor url,
+   nor any information that the interface that contains the search bar can give us.

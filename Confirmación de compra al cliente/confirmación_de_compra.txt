@@ -1,0 +1,16 @@
+Confirmación de compra para ecommerce.
+
+Purchase confirmation for ecommerce.
+
+A) Sistema de confirmación de compra:
+   -Una pantalla (producto) al menos debe ser full HD.
+   -Preguntarle si está seguro al momento de comprar.
+
+
+
+__
+
+A) Purchase confirmation system:
+   -One screen (product) must be at least full HD.
+   -Ask if you are sure at the time of purchase.
+
