@@ -1,0 +1,11 @@
+A) 
+-Contener nombre, mail, materia adeudada.
+-Validar mails y nombres.
+.Enviar al servidor de manera pulida.
+
+
+
+A)
+-Contain name, mail, matter owed.
+-Validate emails and names.
+.Send to server in a polished way.

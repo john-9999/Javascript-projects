@@ -1,0 +1,58 @@
+body{
+	font-family: sans-serif;
+	color: #333;
+	box-sizing: border-box;
+	background: #000;
+}
+
+#h2-form{
+	color: #fff;
+}
+
+/*FORMULARIOS(CASILLEROS)*/
+input{
+	display: block;
+	width: 100%;
+	padding: 6px;
+    margin: 12px auto;
+    box-sizing: border-box;
+    border: none;
+    border-top: 2px solid #48e;
+    background: #00ffff;
+    outline: none !important;
+    transition: background 0.3s;
+}
+
+/*PLACE HOLDER*/
+input::placeholder{
+	color: #fff;
+	transition: color 0.29s;
+}
+
+input:hover{
+	background: #00ffff;
+}
+
+/*BOTÓN SOLICITAR MESA*/
+input[type="submit"]{
+	width: 50%;
+	margin-top: 18px;
+	color: #fff;
+}
+/*CONTENEDOR FORMULARIO*/
+form{
+	width: 80%;
+	margin: auto;
+	background: #013;
+	padding: 30px;
+}
+
+/*MENSAJE DE ÉXITO*/
+.green{
+	color: #9c9;
+}
+
+/*MENSAJE DE ERROR*/
+.red{
+	color: #c20;
+}
