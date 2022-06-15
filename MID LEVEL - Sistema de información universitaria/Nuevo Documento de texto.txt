@@ -1,0 +1,15 @@
+B)Requerimientos del sistema
+
+-Interfaz agradable y atractiva.
+-Contener datos de manera estructurada.
+-El profesor debe poder elegir cuándo rinde el alumno.
+-En dicho sistema se deben poder actualizar y reemplazar los datos de los alumnos.
+
+...
+
+B) System requirements
+
+-Nice and attractive interface.
+-Contain data in a structured way.
+-The teacher should be able to choose when the student pays.
+-In said system, it must be possible to update and replace the data of the students.

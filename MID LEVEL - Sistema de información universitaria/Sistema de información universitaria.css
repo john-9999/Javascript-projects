@@ -1,0 +1,26 @@
+body{
+	font-family: sans-serif;
+	background: #00ffff;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-rows: 50px; /*Especifica el número (y las alturas) de las FILAS en un diseño de cuadrícula.*/
+	grid-template-columns: repeat(4,minmax(min-content,max-content)) ; /*La propiedad grid-template-columns especifica el número (y el ancho) de las columnas en un diseño de cuadrícula.*/
+	grid-auto-rows: 50px;/*La propiedad grid-auto-rows establece un tamaño para las filas en un contenedor de cuadrícula. Esta propiedad afecta solo a las filas cuyo tamaño no se ha establecido.*/
+}
+
+.grid-container .grid-item{
+	padding: 10px;
+	border: 1px solid #26a;
+	margin: 5px;
+	background: #ffff;
+}
+
+.boton-confirmar{
+	padding: 9px 40px;
+	background: #15e;
+	color: #fff;
+	border: none;
+	margin: 30px;
+}
