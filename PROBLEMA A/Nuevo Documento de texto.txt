@@ -1,0 +1,11 @@
+A)Interfaz para introducir nota
+-Validar que no haya errores
+-Promediar notas con trabajos
+-Si el promedio es mayor a 7/10: APROBAR.
+
+...
+
+A)Interface to enter note
+- Check that there are no errors
+-Average grades with jobs
+-If the average is greater than 7/10: APPROVE.
