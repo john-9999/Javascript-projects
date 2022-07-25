@@ -1,0 +1,1067 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@900&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    
+}
+
+
+
+
+
+
+
+
+
+/*REUSABLE SELECTOR*/
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 0.938em;
+
+}
+
+.column{
+    margin-left: -0938em;
+    margin-right: -0938em;
+}
+
+.column .row{
+    padding: 0 0.938em;
+}
+
+.flexwrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexcenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*lista de items(principal y derecha)*/
+.flexitem{
+    display: flex;
+    align-items: center;
+}
+
+.flexcol{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+/*links de arriba*/
+.main-links a:hover {
+    color: var(--secondary-color);
+}
+
+.second-links a:hover {
+    color: var(--light-text-color);
+}
+
+.icon-small, .icon-large{
+    display: flex;
+    align-items: center;
+    padding: 0 0.25em;
+    font-weight: normal;
+}
+
+.icon-small{
+    font-size: 1.25em;
+    margin-left: auto;
+}
+
+.icon-large{
+    font-size: 1.75em;
+    padding: 0 0.75em 0 0;
+}
+
+.mobile-hide {
+    display: none;
+}
+
+/*HEADER*/
+:where(.off-canvas, header) li > a {/*lo enlazamos de cierta manera con la parte del estilo de canvas*/
+    display: flex;
+    position: relative;
+    line-height: inherit;
+    transition: var(--trans-color);/*para que cuándo toquemos los items de arriba cambien a color sombra*/
+    
+}
+
+
+
+/*01. HEADER  
+a. Header Top(lo acomodamos)*/
+
+.header-top .wrapper {
+    font-size: var(--font-small);
+    font-weight: var(--fw3);
+    justify-content: space-between;
+    line-height: 42px;
+}
+
+.header-top .wrapper ul{
+    gap: 2em;
+}
+
+.header-top li {
+    position: relative;
+}
+
+.header-top ul ul { /*para que los items a la derecha de las divisas esten a la misma altura que los items de las divisas*/
+    position: absolute;
+    left: 1em;
+    line-height: 2.5em;
+    background-color: #00ffff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    z-index: 1;
+    display: none;
+}
+
+:where(.header-top .thetop-nav) .right ul ul li a {
+    padding: 0.25em 1em;
+}
+
+:where(.header-top, .thetop-nav) .right ul ul li.current a {
+    background-color:#00ffff;
+    transition: var(--trans-color);
+    border-radius: 10px;
+    
+   
+   
+}
+
+.header-top li:hover ul {
+    display: block;
+}
+
+/*01.HEADER
+b. Header Nav*/
+
+.header-nav {
+    padding: 0.5em 0;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+.trigger {
+    font-size: 1.5em;
+    display: flex;
+    padding: 0.25em;
+    margin-right: 0.5em;
+}
+
+.logo a {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75em;
+    position: relative;
+    font-weight: var(--fwB);
+    display: flex;
+    padding-left: 0.75em;
+    margin-right: 2em;
+    color: #00ffff;
+}
+
+.circle{
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    border-radius: var(--percent50);
+    background-color: var(--light-bg-color);
+    z-index: -1;
+}
+
+.circle::before{
+    content: '';
+    position:absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: var(--percent50);
+    background-color: var(--secondary-color);
+    bottom: 5px;
+    right: 5px;
+    opacity: .4;
+}
+
+.header-nav nav > ul {
+    line-height: 100px;
+    gap: 2em;
+}
+/*new azul(items al lado del logo store)*/
+.fly-item {
+    position: absolute;
+    height: 16px;
+    font-size: var(--font-smaller);
+    padding: 2px;
+    text-align: center;
+    line-height: 10px;
+    color: var(--white-color);
+}
+
+nav .fly-item {
+    top: 50%;
+    margin-top: -27px;
+    width: 40px;
+    border-radius: 2px;
+    right:-32px;
+    background-color: #00ffff;
+}
+
+.header-nav .right {
+    position: relative;
+    margin-left: auto;
+}
+
+.header-nav .right .icon-large {
+    position: relative;
+}
+
+.header-nav .right .fly-item {
+    top: 0;
+    font-size: 13px;
+    right: 16px;
+    width: 16px;
+    background-color: #00ffff;
+    border-radius: 14px;
+}
+
+.mega .flexcol {
+    flex: 1;
+    min-width: 180px;
+    padding-right: 2.5em;
+    margin-bottom: 1.5em;
+    z-index: 1;
+}
+
+/*01. HEADER
+c. Header Main, Departmens Category
+*/
+.header-main {
+    background-color: #00ffff;
+    padding: 1.5em 0;
+    margin-bottom: 2em;
+}
+
+.dpt-cat {
+    position: relative;
+    z-index: 10;
+}
+
+.dpt-cat .dpt-head {
+    position: relative;
+    width: 300px;
+    padding: 0.75em 1.5em;
+    background-color: #333;
+    border-radius: 7px 7px 0 0;
+    color: #fff;
+    margin-bottom: -2.15em;
+}
+
+.ri-menu-3-line {
+    color: #00ffff;
+    background-color: #333;
+}
+
+.dpt-cat .dpt-trigger {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1.3em;
+    height: 60px;
+    width: 60px;
+
+}
+
+.dpt-menu > ul > li > a {/*departamentos desktop*/
+    font-size:  var(--font-small);
+    height: 33px;
+    align-items: center;
+    color: #333;
+    
+}
+
+.dpt-menu .has-child:hover ul { /*para que se oculten los menu de los departamentos (al seleccionarlos apareceran)*/
+    display: block;
+}
+
+.dpt-menu .has-child li a:hover {
+    text-decoration: underline;
+}
+
+
+.mini-text {
+    font-size: 13px;
+}
+
+/*HEADER
+d. Search Form (barra de busqueda o lupa)*/
+.header-main .right {
+    flex: 1;
+}
+
+form {
+    position: relative;
+}
+
+form.search input {
+    line-height: 3.25em;
+    padding: 0 7em 0 4.5em;
+    border: 0;
+    outline: 0;
+    width: var(--percent100);
+    border-radius: 7px;
+    font-size: 0.9em;
+    font-weight: var(--fw3);
+}
+
+form.search :where(span,button) {/*boton de busqueda (el que esta al lado de la barra de búsqueda)*/
+    position:absolute;
+    top:0;
+    padding: 0.55em 1.5em;
+    font-size: 1em;
+    color: var(--light-text-color);
+    height: var(--percent100);
+}
+
+form.search button {/*boton de busqueda*/
+    right:0;
+    border:0;
+    outline:0;
+    font-size: 0.875em;
+    font-weight: var(--fw6);
+    background-color: #333;
+    color: #fff;
+    border-radius: 0 7px 7px 0;
+    cursor: pointer;
+    transition: var(--transition-background);
+}
+
+form.search button:hover{
+    background-color: #000;
+}
+
+ /*HEADER 
+  e. Responsive MENU -Off Canvas(menu responsive para celular dónde también pondremos un icono para que se cierre)*/
+
+  .site-off{
+    position:fixed;
+    width: 320px;
+    height: var(--percent100);
+    background-color: #fff;
+    z-index: 1000;
+    transform: translateX(-100%);/*Escondemos el menu responsive de los departamentos*/
+    visibility: hidden;
+    transition: transform .4s, visibility .4s;
+    will-change:transform, visibility;  
+} 
+
+.showmenu .site-off {/*Mostramos el menu responsive a la izquierda (se abre con esto y la funcion en js)*/
+    transform: translate(0);
+    visibility: visible;
+    transform: transform .4s 0s, visibility 0s 0s;
+}
+
+  .off-canvas {
+    width: var(--percent100);
+    height: var(--percent100);
+    touch-action: auto;
+    padding: 1.5em;
+  }
+
+  .off-canvas .canvas-head {
+    color: #fff;
+    justify-content: space-between;
+    padding: 1.5em;
+    margin: -1.5em -1.5em 1.5em;
+    background-color: #333;
+    border-bottom-right-radius: 160px 25px;
+    
+  }
+
+  .off-canvas .canvas-head .logo {
+    z-index: 10;
+    position: relative;
+    
+  }
+
+  .off-canvas .canvas-head .logo .circle {
+    opacity: .75;
+    
+  }
+
+  .t-close {
+    font-size: 1.12em;
+    width: 29px;
+    height: 29px;
+    border-radius: 40px;
+    background-color:#00ffff ;
+    color: #00ffff;
+    transition: var(--trans-background-color);
+    
+  }
+
+  .t-close:hover {
+    background-color:#00ffff ;
+    color: #00ffff;
+    opacity: .75;
+    
+  }
+
+  .off-canvas .dpt-head {/*le damos estilo al título "all departments"*/
+    font-size: var(--font-small);
+    padding: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    background-color: #00ffff;
+    border-radius: 7px 7px 0 0;
+    
+    
+  }
+
+  
+
+  .off-canvas .has-child > :where(ul, .mega) {/*RESPONSIVE:acomodamos los items que están debajo de c/titulo de los departamentos ej: los de abajo de beauty (makeup,skin care,etc)*/
+    font-size: var(--font-small);
+    font-weight: var(--fw3);
+    line-height: 28px;
+    padding-left:3em ;
+    height: auto;
+    max-height: 0;
+    overflow-y: scroll;/*scroll en caso de que sea neceswrio en el menu responsive de los departments*/
+    transition: max-height .3s cubic-bezier(0.215, 0.610, 0.355, 1);
+  }
+
+  .off-canvas .expand > :where(ul, .mega) { /*Expandimos los departamentos del menu responsive para que al hacer click se vean*/
+    max-height: 2000px;
+  }
+
+  .off-canvas .thetop-nav ul, .off-canvas nav > ul { /*desde el depto home,blog,sign up y parte de divisas e idiomas en adelante acomodamos los items de manera responsive*/
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: var(--font-small);
+    line-height: 36px;
+    padding-top: 1.25em;
+    margin: 1.25em 0;
+    border-top:1px solid var(--border-color);
+    
+  }
+
+  .off-canvas nav .mega {
+    padding: 0;
+    
+  }
+
+  .off-canvas nav .mega .products {
+    display: none;
+    
+  }
+
+  .off-canvas .has-child .icon-small {
+    padding: 0.5em;
+    line-height: initial;
+    
+  }
+
+  .off-canvas .dpt-menu .icon-small i {
+    transform: rotate(90deg);
+  }
+
+  .off-canvas .has-child {
+    width: var(--percent100);
+  }
+
+  .off-canvas .thetop-nav .right > ul > :where(:nth-child(4), li:nth-child(5)) > a{
+    display: none;
+    
+  }
+
+  .off-canvas .thetop-nav .right ul ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .off-canvas .thetop-nav .right ul ul li a {
+    padding: 0.5em;
+    border: 1px solid #333;
+    line-height: 16px;
+    margin: 0 0.5em 0.5em 0;
+    
+  }
+
+  
+
+  /*titulo-con-slider*/
+  .div-tittle-slider{
+    margin-bottom: -60px;
+    margin-top: 35px;
+    margin-left:42px ;
+    position: absolute;
+    z-index: 1;
+    flex-wrap: wrap;
+    
+  }
+
+
+  .div-tittle-slider a{
+    color: #fff;
+    background-color: #fa5509;
+    font-size: 19px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration-line: underline;
+    padding: 5px;
+    border: solid fa5509;
+    border-radius: 27px;
+  }
+
+  .div-tittle-slider a .fab{ /*(ICONOS y ENLACES)*/
+	font-size: 19px;
+
+}
+
+.div-tittle-slider a:hover{
+	opacity: 0.8;
+	color: #fff;
+}
+
+.div-tittle-slider i{
+	color:#8B861F ;
+	
+}
+
+.div-tittle-slider i {
+    color: #fff;
+    padding: 4px;
+}
+
+/*DIV RESPONSIVE (titulo-con-slider)*/
+
+@media screen and (min-width: 400px)/*(que se ponga #00ffff versión mobile)*/ and (max-width: 650px)/*(que quede #000 en versión desktop)*/ {
+    .div-tittle-slider{
+        display: block;
+    }
+}
+
+/*------------------
+   *02. SLIDER
+   -------------------*/
+   
+   #kiko-slider{/*(div general del slider)*/
+    font-family: sans-serif;
+    margin-left: auto;
+    margin-right: 19px;
+    background-color: #fff;
+    max-width: auto;
+    min-width: 250px;
+    width: calc(100% - (300px + 2em));
+    padding: 30px;
+    box-sizing: border-box; 
+  }
+  
+  #kiko-slider > ul, li {
+      padding: 10;
+      margin: 10;
+      list-style: none;
+  }
+  
+  #kiko-slider > ul.slider{
+    position: relative;
+    max-width: 800px;
+    min-width: 250px;
+    width: 100%;
+    height: 300px;
+  }
+  
+  #kiko-slider > ul.slider a{ /*titulos de enlaces dentro de los slider*/
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    margin: 10px;
+    left: 50%;
+    top: 130px;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+  }
+  
+  #kiko-slider > ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      font-size: 15px;
+      transition: opacity .5s;
+      background:#fff;
+  }
+  
+  #kiko-slider > ul.slider li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  #kiko-slider > ul.slider li:first-child {
+      opacity: 1; /*Mostramos el primer <li>*/
+  }
+  
+  #kiko-slider > ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  
+  #kiko-slider > .menu{
+    text-align: center;
+    margin: 15px;
+    min-width: 250px;
+  }
+  
+  #kiko-slider > .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  #kiko-slider > .menu li a{/*números*/
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    background-color: #333;
+    padding: 10px;
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+    border-radius: 100%;
+  }
+
+  
+
+  /*----------
+  03. BRANDS
+  ------------*/
+
+  .brands .wrapper {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+  }
+
+  .brands .item img {
+    opacity: .25;
+    transition: opacity .3s;
+  }
+
+  .brands .item a:hover img {
+    opacity: 1;
+    background-color: #00ffff;
+    transition: opacity .1s;
+  }
+
+  /*carro de compras*/
+
+  button {
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.page-nav {
+    background-color: #00ffff;
+    border: 1px solid #00ffff;
+    position: relative;
+}
+
+.page-nav h1 {
+    margin: 20px;
+}
+
+
+
+.button-checkout {
+    background-color: white;
+    color: black;
+    border: 2px solid #00ffff; /* Blue */
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 15px;
+    margin-right: 40px;
+    bottom: -13px;
+}
+
+.button-checkout:hover {
+    background-color: #00ffff; /* Blue */
+    color: #fff;
+}
+
+.page-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.product-container {
+    margin: 15px;
+    padding: 2px 16px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.product-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.product-container img {
+    width: 300px;
+}
+
+.product-container h1 {
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.button-add {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #00ffff; /* Green */
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+}
+  
+.button-add:hover {
+    background-color: #00ffff; /* Green */
+    color: #fff;
+}
+
+.button-remove{
+    background-color: #fff;
+    margin-bottom: 8px;
+    border: 2px solid #333;
+    transition-duration: 0.4s; 
+}
+
+.button-remove:hover {
+    background-color: #333; /* Green */
+    color: #fff;
+}
+
+/*buscador inteligente*/
+
+
+
+
+/*footer*/
+/*------------------------INICIO FOOTER------------------------*/
+
+.footer{
+	width: auto;
+    min-width: 250px;
+	padding: 50px /*arriba y abajo*//*en los costados*/;
+	background-color: #00ffff;
+    background-size: cover; /*img centrada*/
+    background-attachment: fixed;
+    margin-top: 0px;
+    font-family: sans-serif;
+}
+
+
+
+.container__footer{
+	display: flex; /*Columnas una al lado de otra*/
+	flex-wrap: wrap;/*para que se pongan una debajo de la otra cuándo no entren en una sola linea*/
+	justify-content: space-between;/*para que puedan ocupar el ancho completo del proyecto*/
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 30px;/*creamos un espacio entre el contenedor del footer y el resto del contenido que está arriba*/
+
+
+}
+
+.box__footer{
+	display: flex; /*para que sus elementos se pongan uno debajo del otro (H2 y Enlaces)*/
+	flex-direction: column;/*para que sus elementos se pongan en columna (H2 y Enlaces)*/
+	padding: 10px;/*para que mantengan un pequeño margen entre el titulo y el contenedor*/
+  flex-wrap: wrap;  
+}
+
+.box__footer .logo img{
+	width: 250px;
+	margin-top: -75px;
+	margin-left: 0px;
+	margin-bottom: 10px;
+	border: solid transparent;
+	border-radius: 15px;
+}
+
+.box__footer .terms p{
+	max-width: 350px;/*lo achicamos al ancho*/
+	margin-top: -45px;/*para que se despegue del logo*/
+	font-weight: 500;
+	color: #fff;
+	font-size: 18px;
+}
+
+.box__footer h2{
+	margin-top: 10px;
+	margin-bottom: 23px; /*(asi bajan los enlaces que están debajo de los H2)*/
+    margin-right: 50px;
+	color: #333;
+	font-weight: 600;
+    font-size: 20px;
+}
+
+
+.box__footer a{
+	margin-top: 10px;
+	color: #fff;
+	font-weight: 600;
+}
+
+.box__footer a:hover{
+	opacity: 0.8;
+	color: #333;
+}
+
+.box__footer a .fab{ /*(ICONOS y ENLACES)*/
+	font-size: 20px;
+
+}
+
+
+.box__footer i{
+	color:#fff ;
+	
+}
+/*última parte abajo del HR*/
+.box__copyright{
+	max-width: 1200px;
+	margin: auto;
+	text-align: center;
+	padding: 0 /*costados*/40px /*arriba y abajo*/;
+    
+}
+
+.box__copyright p{
+	margin-top: 20px;
+	color: #333;
+    
+}
+
+.box__copyright a b{
+    color: #333;
+    
+}
+
+.box__copyright .nombre{
+    color: #333;
+    
+}
+
+.box__copyright hr{
+	border: none;
+	height: 3px;
+	background-color : #333;
+    
+}
+  
+
+   
+  
+/*-----------------------------------*/
+
+
+
+
+/*15. RESPONSIVE*/
+@media screen and (min-width: 992px){
+    .container {
+        padding: 0 2em;
+    }
+
+    .desktop-hide {
+        display: none;
+    }
+
+    .mobile-hide{
+        display: block;
+    }
+
+    .logo a {
+        margin-left: 2em;
+    }
+
+    .header-nav {
+        padding: 0;
+        margin: 0;
+        border-bottom: 0;
+    }
+
+    .header-nav .right li > a {
+        margin-left: 1em;
+    }
+
+    /*mega menu(lo acomodamos responsive)*/
+    nav .mega {
+        position: absolute;
+        width: var(--percent100);
+        height: auto;
+        top: auto;
+        left: 0;
+        right: 0;
+        padding: 2.5em;
+        line-height: 2em;
+        background-color: #00ffff;
+        box-shadow: rgb(0 0 0 / 20%) 0 30px 20px -30px;
+        z-index: 100;
+
+        display: none; /*para que el mega menu se oculte(después lo veremos)*/
+    }
+
+    nav li.has-child:hover .mega {
+        display: block; /*para que cuándo apretemos en el menú WOMEN se abrá el mega menu*/
+    }
+
+    nav .mega .wrapper {
+        display: flex;
+    }
+
+    nav .mega h4 {
+        font-size: 0.8em;
+        text-transform: uppercase;
+    }
+
+    nav .mega ul {
+        font-size: var(--font-small);
+    }
+
+    .view-all {
+        font-size: var(--font-small);
+        display: flex;
+        gap: 1em;
+        transition: var(--trans-color);
+    }
+
+    .header-main .right{
+        max-width: 600px;
+        margin-left: auto;
+    }
+
+    /*Department menu (Es un container dónde se encuentra la barra de búsqueda y los items por sección de moda, cocina,etc)*/
+    .dpt-menu {
+        position: absolute;
+        top: 4.0em;
+        left: 0.04em;
+        width: 300px;
+        background-color: #fff;
+        border: 1px solid #333;
+        border-top: 0;
+        border-bottom: 0;
+        
+    }
+
+    .dpt-menu > ul > li > a {
+        font-weight: var(--fw5);
+        padding: 0 1.5em;
+        border-bottom: 1px solid #333;
+        
+    }
+
+/*Acomodamos los items del mega menu que sale desde la izquierda con todos los departamentos*/
+    .dpt-menu .has-child > ul, .dpt-menu .mega {
+        position: absolute;
+        top:0;
+        left: 300px;
+        width: 300px ;
+        height: auto;
+        min-height: 250px;
+        padding:8px;
+        font-size: var(--font-small);
+        line-height: 2.5em;
+        border: 1px solid #333;
+        display: none;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-size: auto;
+        color: #fff;
+    }
+
+    .mega .flexcol {
+        margin: 5px;
+        padding: 5px;
+        
+    }
+
+    
+
+    /*showing the first sub menu*/
+    .dpt-menu .mega{
+        display: block;
+        
+        
+    }
+
+    .dpt-menu .beauty ul {
+        background: #00ffff;
+        color: #fff;
+        
+    }
+
+
+    .dpt-menu .electronic ul {
+        background: #00ffff;
+        color: #fff;
+        
+    }
+
+    .dpt-menu .fashion ul {
+        background: #00ffff;
+        color: #fff;
+    }
+
+    .dpt-menu .homekit .mega {
+        background: #00ffff;
+        color: #fff;
+    }
+    
+    .dpt-menu .has-child > :where(ul,.mega)::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .dpt-menu .mega {
+        width: auto;
+        min-width: 250px;
+        display: none; /*para que se oculte el menu "Home & Kitchen(cuándo pasemos el mouse por arriba aparecerá y será más agradable esteticamente y visualmente)"*/
+    }
+
+    .dpt-menu .has-child:hover .mega {
+        display: flex;
+    }
+    
+
+
+    
+    
+
+}
+/*-----------------------------------*/
+
+  
