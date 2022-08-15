@@ -1,0 +1,2 @@
+-Crear un sistema que le permita obtener información.
+-Mostrar ordenadamente en un sitio web.
