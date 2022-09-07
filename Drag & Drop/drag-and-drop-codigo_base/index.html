@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Listas con Drag and Drop || SortableJS</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<div class="contenedor">
+		<div class="contenedor-lista">
+			<h1>Drag and Drop con Javascript</h1>
+
+			<div class="lista" id="lista">
+
+				<!-- ? Persona #1 -->
+				<div class="persona" data-id="1">
+					<div class="foto">
+						<img src="https://depor.com/resizer/7EIXttcIDwdp84G8n2h4GjuQPgg=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/D3S7LLUB6JDAJOHFHHYCEAORJY.jpg" alt="">
+					</div>
+					<div class="nombre">
+						<p class="label">Nombre</p>
+						<p class="dato">Sergio Aguero</p>
+					</div>
+					<div class="edad">
+						<p class="label">Edad</p>
+						<p class="dato">32</p>
+					</div>
+					<div class="correo">
+						<div class="label">Correo</div>
+						<p class="dato">Aguero@gmail.com</p>
+					</div>
+				</div>
+				
+				<!-- ? Persona #2 -->
+				<div class="persona" data-id="2">
+					<div class="foto">
+						<img src="https://www.mancity.com/meta/media/ptfh0hca/julian-alvarez.png" alt="">
+					</div>
+					<div class="nombre">
+						<p class="label">Nombre</p>
+						<p class="dato">J.Alvarez</p>
+					</div>
+					<div class="edad">
+						<p class="label">Edad</p>
+						<p class="dato">21</p>
+					</div>
+					<div class="correo">
+						<div class="label">Correo</div>
+						<p class="dato">alvarez@gmail.com</p>
+					</div>
+				</div>
+
+				<!-- ? Persona #3 -->
+				<div class="persona" data-id="3">
+					<div class="foto">
+						<img src="https://fotos.perfil.com/2021/12/12/trim/900/900/lautaro-martinez-1282865.jpg" alt="">
+					</div>
+					<div class="nombre">
+						<p class="label">Nombre</p>
+						<p class="dato">Lautaro Martinez</p>
+					</div>
+					<div class="edad">
+						<p class="label">Edad</p>
+						<p class="dato">24</p>
+					</div>
+					<div class="correo">
+						<div class="label">Correo</div>
+						<p class="dato">Toro@gmail.com</p>
+					</div>
+				</div>
+
+				<!-- ? Persona #4 -->
+				<div class="persona" data-id="4">
+					<div class="foto">
+						<img src="https://pbs.twimg.com/media/BrzIfC_IQAAJpkt.png" alt="">
+					</div>
+					<div class="nombre">
+						<p class="label">Nombre</p>
+						<p class="dato">Messi</p>
+					</div>
+					<div class="edad">
+						<p class="label">Edad</p>
+						<p class="dato">35</p>
+					</div>
+					<div class="correo">
+						<div class="label">Correo</div>
+						<p class="dato">Messi@gmail.com</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
