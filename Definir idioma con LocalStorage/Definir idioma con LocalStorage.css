@@ -1,0 +1,42 @@
+body{
+    color: #222;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-overlay{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    animation: aparecer 1s forwards;
+}
+
+.modal{ /*para que el h2 del cuadro modal no quede atras y se vea oscuro*/
+    background: #fff;
+    margin: 30px;
+    padding: 20px;
+}
+
+button{
+    border: none;
+    margin:3px 9px;
+    padding: 9px 20px;
+    background: #ddd;
+}
+
+button:hover{
+    background: #ccc;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
