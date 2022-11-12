@@ -1,0 +1,1 @@
+Código para almacenar recursos y diversas funciones en caché
