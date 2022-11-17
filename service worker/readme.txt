@@ -1,0 +1,1 @@
+Comunicación en tiempo real entre navegador y servidor. Ademas se muestra como cachear un sitio web y mostrarlo online.
