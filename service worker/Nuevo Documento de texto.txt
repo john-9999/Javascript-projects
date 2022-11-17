@@ -1,1 +1,0 @@
-Comunicación en tiempo real entre navegador y servidor.
